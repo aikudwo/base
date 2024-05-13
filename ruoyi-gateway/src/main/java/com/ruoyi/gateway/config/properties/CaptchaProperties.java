@@ -1,5 +1,6 @@
 package com.ruoyi.gateway.config.properties;
 
+import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.context.annotation.Configuration;
@@ -12,6 +13,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @RefreshScope
 @ConfigurationProperties(prefix = "security.captcha")
+@Data
 public class CaptchaProperties
 {
     /**
